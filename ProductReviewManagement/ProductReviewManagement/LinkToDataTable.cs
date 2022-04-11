@@ -23,6 +23,10 @@ namespace ProductReviewManagement
             dt.Rows.Add("3", "Tofu");
             DisplayProducts(dt);
         }
+        /// <summary>
+        /// Displays the products.
+        /// </summary>
+        /// <param name="dt">The dt.</param>
         public void DisplayProducts(DataTable dt)
         {
             var productName = from DataTable in dt.AsEnumerable() select DataTable.Field<string>("ProductName");
