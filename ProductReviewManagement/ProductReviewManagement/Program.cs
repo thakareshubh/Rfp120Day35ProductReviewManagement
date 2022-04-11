@@ -33,10 +33,13 @@ namespace ProductReviewManagement
 
             //Uc2-Product review managment
             Management management = new Management();
-           // management.TopRecords(listofpr);
+            // management.TopRecords(listofpr);
 
-           //Uc3Retrieve All the record
-            management.SelectRecords(listofpr);
+            //Uc3Retrieve All the record
+            //  management.SelectRecords(listofpr);
+
+            //Uc4Retrieve count
+            management.RetrieveCount(listofpr);
         }
     }
 }
